@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{0}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #395874;
+            background-color: #F2E8DF;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #FFFFFF;
+        }
+
+        .header {
+            background-color: #6DD3E1;
+            color: #395874;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: #F2AD72;
+            color: #26110C;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>{{subject}}</h1>
+        </div>
+        <div class="content">
+            {{content}}
+        </div>
+        <div class="footer">
+            © 2023 PetHome. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>

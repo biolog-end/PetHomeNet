@@ -1,0 +1,269 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\asset-manifest.json",
+      "PackagePath": "staticwebassets\\asset-manifest.json"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\logo192.png",
+      "PackagePath": "staticwebassets\\logo192.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\logo512.png",
+      "PackagePath": "staticwebassets\\logo512.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\manifest.json",
+      "PackagePath": "staticwebassets\\manifest.json"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\robots.txt",
+      "PackagePath": "staticwebassets\\robots.txt"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\css\\main.17b1f645.css",
+      "PackagePath": "staticwebassets\\static\\css\\main.17b1f645.css"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\css\\main.17b1f645.css.map",
+      "PackagePath": "staticwebassets\\static\\css\\main.17b1f645.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\js\\453.4ce15a93.chunk.js",
+      "PackagePath": "staticwebassets\\static\\js\\453.4ce15a93.chunk.js"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\js\\453.4ce15a93.chunk.js.map",
+      "PackagePath": "staticwebassets\\static\\js\\453.4ce15a93.chunk.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\js\\main.35999e28.js",
+      "PackagePath": "staticwebassets\\static\\js\\main.35999e28.js"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\js\\main.35999e28.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\static\\js\\main.35999e28.js.LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\js\\main.35999e28.js.map",
+      "PackagePath": "staticwebassets\\static\\js\\main.35999e28.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\Ball.d76d9d7ee1123eccba1c.png",
+      "PackagePath": "staticwebassets\\static\\media\\Ball.d76d9d7ee1123eccba1c.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\Bubbles.464fd709d65a7493cfd6.png",
+      "PackagePath": "staticwebassets\\static\\media\\Bubbles.464fd709d65a7493cfd6.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\BubblesWhite.2854b433254241f7246c.png",
+      "PackagePath": "staticwebassets\\static\\media\\BubblesWhite.2854b433254241f7246c.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\CARE.15b275447dcf22622446.png",
+      "PackagePath": "staticwebassets\\static\\media\\CARE.15b275447dcf22622446.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\COMFORT.aad39b3e36aa76840696.png",
+      "PackagePath": "staticwebassets\\static\\media\\COMFORT.aad39b3e36aa76840696.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\CatFood.122ee507d9ae08450dd2.png",
+      "PackagePath": "staticwebassets\\static\\media\\CatFood.122ee507d9ae08450dd2.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\CosmicVibe.efb3d989dab54e7db34c.png",
+      "PackagePath": "staticwebassets\\static\\media\\CosmicVibe.efb3d989dab54e7db34c.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\DogFood.88321b6a325e1e1cb6b0.png",
+      "PackagePath": "staticwebassets\\static\\media\\DogFood.88321b6a325e1e1cb6b0.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\Duck.877ff8525b2be8512c55.png",
+      "PackagePath": "staticwebassets\\static\\media\\Duck.877ff8525b2be8512c55.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\FishBones.a23740c3a45db334375e.png",
+      "PackagePath": "staticwebassets\\static\\media\\FishBones.a23740c3a45db334375e.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\Footer.ba78d6e479c92621e3d0.png",
+      "PackagePath": "staticwebassets\\static\\media\\Footer.ba78d6e479c92621e3d0.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\HEALTH.6aa5555996fa5fdd7def.png",
+      "PackagePath": "staticwebassets\\static\\media\\HEALTH.6aa5555996fa5fdd7def.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\HotelQuest.4195489e273987c22392.png",
+      "PackagePath": "staticwebassets\\static\\media\\HotelQuest.4195489e273987c22392.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\KitaMariko.118c8025d13250885bce.png",
+      "PackagePath": "staticwebassets\\static\\media\\KitaMariko.118c8025d13250885bce.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\LogoExample.219753ea9062620c97c4.png",
+      "PackagePath": "staticwebassets\\static\\media\\LogoExample.219753ea9062620c97c4.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\Mouse.698de8e9df60dc50c208.png",
+      "PackagePath": "staticwebassets\\static\\media\\Mouse.698de8e9df60dc50c208.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\PETCARE.2272eb5cf276f04a7f2c.png",
+      "PackagePath": "staticwebassets\\static\\media\\PETCARE.2272eb5cf276f04a7f2c.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\PetHotelExmpl1.af05413b1720428421c1.png",
+      "PackagePath": "staticwebassets\\static\\media\\PetHotelExmpl1.af05413b1720428421c1.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\PetHotelExmpl10.ec84af6afa0f6ceb4bba.png",
+      "PackagePath": "staticwebassets\\static\\media\\PetHotelExmpl10.ec84af6afa0f6ceb4bba.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\PetHotelExmpl11.3276e3ee8ea7009fc54f.png",
+      "PackagePath": "staticwebassets\\static\\media\\PetHotelExmpl11.3276e3ee8ea7009fc54f.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\PetHotelExmpl12.972c0a059a5740d4efef.png",
+      "PackagePath": "staticwebassets\\static\\media\\PetHotelExmpl12.972c0a059a5740d4efef.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\PetHotelExmpl13.fdd069d00edbc67eba2a.png",
+      "PackagePath": "staticwebassets\\static\\media\\PetHotelExmpl13.fdd069d00edbc67eba2a.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\PetHotelExmpl2.01a3c0a1a725808de525.png",
+      "PackagePath": "staticwebassets\\static\\media\\PetHotelExmpl2.01a3c0a1a725808de525.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\PetHotelExmpl3.da079b5d51171ebc93f3.png",
+      "PackagePath": "staticwebassets\\static\\media\\PetHotelExmpl3.da079b5d51171ebc93f3.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\PetHotelExmpl4.b323415c66f834435f35.png",
+      "PackagePath": "staticwebassets\\static\\media\\PetHotelExmpl4.b323415c66f834435f35.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\PetHotelExmpl5.17a422d35502ca24876a.png",
+      "PackagePath": "staticwebassets\\static\\media\\PetHotelExmpl5.17a422d35502ca24876a.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\PetHotelExmpl6.a8723654e97eeca779c5.png",
+      "PackagePath": "staticwebassets\\static\\media\\PetHotelExmpl6.a8723654e97eeca779c5.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\PetHotelExmpl7.71f52143e1e015829c3d.png",
+      "PackagePath": "staticwebassets\\static\\media\\PetHotelExmpl7.71f52143e1e015829c3d.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\PetHotelExmpl8.c476abd4dcb126100a11.png",
+      "PackagePath": "staticwebassets\\static\\media\\PetHotelExmpl8.c476abd4dcb126100a11.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\PetHotelExmpl9.50a24a0e706119ca6ecb.png",
+      "PackagePath": "staticwebassets\\static\\media\\PetHotelExmpl9.50a24a0e706119ca6ecb.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\ReviewBubbles.7c44ed460c6fba24fd0b.png",
+      "PackagePath": "staticwebassets\\static\\media\\ReviewBubbles.7c44ed460c6fba24fd0b.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\Soap.9bf882301cb70509843c.png",
+      "PackagePath": "staticwebassets\\static\\media\\Soap.9bf882301cb70509843c.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\blueladybug463.c24b34411e2ca7eb1ebc.png",
+      "PackagePath": "staticwebassets\\static\\media\\blueladybug463.c24b34411e2ca7eb1ebc.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\bone.d30346f4bb87e6311ff9.png",
+      "PackagePath": "staticwebassets\\static\\media\\bone.d30346f4bb87e6311ff9.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\corkboard.e4a03cf76258a64cf426.png",
+      "PackagePath": "staticwebassets\\static\\media\\corkboard.e4a03cf76258a64cf426.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\dog.c65aed49af7235f88fd5.png",
+      "PackagePath": "staticwebassets\\static\\media\\dog.c65aed49af7235f88fd5.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\guideImg1.c58e5b64e0da9845fd54.png",
+      "PackagePath": "staticwebassets\\static\\media\\guideImg1.c58e5b64e0da9845fd54.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\guideImg2.2509888c847fa7d077c2.png",
+      "PackagePath": "staticwebassets\\static\\media\\guideImg2.2509888c847fa7d077c2.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\guideImg3.43cd7d59396a7627a4ec.png",
+      "PackagePath": "staticwebassets\\static\\media\\guideImg3.43cd7d59396a7627a4ec.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\guideImg4.2bff9c579e113b77496a.png",
+      "PackagePath": "staticwebassets\\static\\media\\guideImg4.2bff9c579e113b77496a.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\guideImg5.25477e6f382a1d16c46f.png",
+      "PackagePath": "staticwebassets\\static\\media\\guideImg5.25477e6f382a1d16c46f.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\happyowner.c59e14d4432d16bb7c95.png",
+      "PackagePath": "staticwebassets\\static\\media\\happyowner.c59e14d4432d16bb7c95.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\lapki.2b480359c724c02dd755.png",
+      "PackagePath": "staticwebassets\\static\\media\\lapki.2b480359c724c02dd755.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\logo.83687d93f7e3ee0d4851.png",
+      "PackagePath": "staticwebassets\\static\\media\\logo.83687d93f7e3ee0d4851.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\luismiguel.1cc2b7a8311639f1e82b.png",
+      "PackagePath": "staticwebassets\\static\\media\\luismiguel.1cc2b7a8311639f1e82b.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\rhealoop.e4052db24f25567cd8f6.png",
+      "PackagePath": "staticwebassets\\static\\media\\rhealoop.e4052db24f25567cd8f6.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\steelserpent.d6a300af7259339419bf.png",
+      "PackagePath": "staticwebassets\\static\\media\\steelserpent.d6a300af7259339419bf.png"
+    },
+    {
+      "Id": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\sunnydayz.c3a1498871de696ff1af.png",
+      "PackagePath": "staticwebassets\\static\\media\\sunnydayz.c3a1498871de696ff1af.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PetHome.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.PetHome.props",
+      "PackagePath": "build\\PetHome.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.PetHome.props",
+      "PackagePath": "buildMultiTargeting\\PetHome.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.PetHome.props",
+      "PackagePath": "buildTransitive\\PetHome.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
