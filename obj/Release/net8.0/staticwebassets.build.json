@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mFAg4isMsWbdI7XacZuNhrzisSdfKUnkiHnNZ+0bkrU=",
+  "Hash": "FttC6NqajqpypvNfImu7cOojweLBabsPvq91ImW0lcg=",
   "Source": "PetHome",
   "BasePath": "_content/PetHome",
   "Mode": "Default",
@@ -1290,12 +1290,12 @@
       "OriginalItemSpec": "wwwroot\\robots.txt"
     },
     {
-      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\css\\main.17b1f645.css",
+      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\css\\main.5e108d41.css",
       "SourceId": "PetHome",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\",
       "BasePath": "_content/PetHome",
-      "RelativePath": "static/css/main.17b1f645.css",
+      "RelativePath": "static/css/main.5e108d41.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1306,15 +1306,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\static\\css\\main.17b1f645.css"
+      "OriginalItemSpec": "wwwroot\\static\\css\\main.5e108d41.css"
     },
     {
-      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\css\\main.17b1f645.css.map",
+      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\css\\main.5e108d41.css.map",
       "SourceId": "PetHome",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\",
       "BasePath": "_content/PetHome",
-      "RelativePath": "static/css/main.17b1f645.css.map",
+      "RelativePath": "static/css/main.5e108d41.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1325,7 +1325,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\static\\css\\main.17b1f645.css.map"
+      "OriginalItemSpec": "wwwroot\\static\\css\\main.5e108d41.css.map"
     },
     {
       "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\js\\453.4ce15a93.chunk.js",
@@ -1366,12 +1366,12 @@
       "OriginalItemSpec": "wwwroot\\static\\js\\453.4ce15a93.chunk.js.map"
     },
     {
-      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\js\\main.35999e28.js",
+      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\js\\main.67807a2c.js",
       "SourceId": "PetHome",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\",
       "BasePath": "_content/PetHome",
-      "RelativePath": "static/js/main.35999e28.js",
+      "RelativePath": "static/js/main.67807a2c.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1382,15 +1382,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\static\\js\\main.35999e28.js"
+      "OriginalItemSpec": "wwwroot\\static\\js\\main.67807a2c.js"
     },
     {
-      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\js\\main.35999e28.js.LICENSE.txt",
+      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\js\\main.67807a2c.js.LICENSE.txt",
       "SourceId": "PetHome",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\",
       "BasePath": "_content/PetHome",
-      "RelativePath": "static/js/main.35999e28.js.LICENSE.txt",
+      "RelativePath": "static/js/main.67807a2c.js.LICENSE.txt",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1401,15 +1401,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\static\\js\\main.35999e28.js.LICENSE.txt"
+      "OriginalItemSpec": "wwwroot\\static\\js\\main.67807a2c.js.LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\js\\main.35999e28.js.map",
+      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\js\\main.67807a2c.js.map",
       "SourceId": "PetHome",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\",
       "BasePath": "_content/PetHome",
-      "RelativePath": "static/js/main.35999e28.js.map",
+      "RelativePath": "static/js/main.67807a2c.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1420,7 +1420,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\static\\js\\main.35999e28.js.map"
+      "OriginalItemSpec": "wwwroot\\static\\js\\main.67807a2c.js.map"
     },
     {
       "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\Ball.d76d9d7ee1123eccba1c.png",
@@ -1573,6 +1573,82 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\static\\media\\COMFORT.aad39b3e36aa76840696.png"
+    },
+    {
+      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\corcboardPhoto1.5c3df1c3d152bf1ba063.jpg",
+      "SourceId": "PetHome",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\",
+      "BasePath": "_content/PetHome",
+      "RelativePath": "static/media/corcboardPhoto1.5c3df1c3d152bf1ba063.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\static\\media\\corcboardPhoto1.5c3df1c3d152bf1ba063.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\corcboardPhoto2.f53758c6addbaa4b10fc.jpg",
+      "SourceId": "PetHome",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\",
+      "BasePath": "_content/PetHome",
+      "RelativePath": "static/media/corcboardPhoto2.f53758c6addbaa4b10fc.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\static\\media\\corcboardPhoto2.f53758c6addbaa4b10fc.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\corcboardPhoto3.c9abef969701329f8f55.jpg",
+      "SourceId": "PetHome",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\",
+      "BasePath": "_content/PetHome",
+      "RelativePath": "static/media/corcboardPhoto3.c9abef969701329f8f55.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\static\\media\\corcboardPhoto3.c9abef969701329f8f55.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\corcboardPhoto4.9a2ade73f117e80d91f2.jpg",
+      "SourceId": "PetHome",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\",
+      "BasePath": "_content/PetHome",
+      "RelativePath": "static/media/corcboardPhoto4.9a2ade73f117e80d91f2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\static\\media\\corcboardPhoto4.9a2ade73f117e80d91f2.jpg"
     },
     {
       "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\corkboard.e4a03cf76258a64cf426.png",
@@ -1839,6 +1915,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\static\\media\\HEALTH.6aa5555996fa5fdd7def.png"
+    },
+    {
+      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\HotelLogo.e13a2799f8c1c24289d3.png",
+      "SourceId": "PetHome",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\",
+      "BasePath": "_content/PetHome",
+      "RelativePath": "static/media/HotelLogo.e13a2799f8c1c24289d3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\static\\media\\HotelLogo.e13a2799f8c1c24289d3.png"
     },
     {
       "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\HotelQuest.4195489e273987c22392.png",

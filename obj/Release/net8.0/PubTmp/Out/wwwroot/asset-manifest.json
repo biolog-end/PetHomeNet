@@ -1,9 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.17b1f645.css",
-    "main.js": "/static/js/main.35999e28.js",
+    "main.css": "/static/css/main.5e108d41.css",
+    "main.js": "/static/js/main.67807a2c.js",
     "static/js/453.4ce15a93.chunk.js": "/static/js/453.4ce15a93.chunk.js",
     "static/media/PetHotelExmpl11.png": "/static/media/PetHotelExmpl11.3276e3ee8ea7009fc54f.png",
+    "static/media/corcboardPhoto4.jpg": "/static/media/corcboardPhoto4.9a2ade73f117e80d91f2.jpg",
+    "static/media/corcboardPhoto3.jpg": "/static/media/corcboardPhoto3.c9abef969701329f8f55.jpg",
+    "static/media/corcboardPhoto1.jpg": "/static/media/corcboardPhoto1.5c3df1c3d152bf1ba063.jpg",
+    "static/media/corcboardPhoto2.jpg": "/static/media/corcboardPhoto2.f53758c6addbaa4b10fc.jpg",
     "static/media/PetHotelExmpl8.png": "/static/media/PetHotelExmpl8.c476abd4dcb126100a11.png",
     "static/media/corkboard.png": "/static/media/corkboard.e4a03cf76258a64cf426.png",
     "static/media/PetHotelExmpl4.png": "/static/media/PetHotelExmpl4.b323415c66f834435f35.png",
@@ -30,6 +34,7 @@
     "static/media/LogoExample.png": "/static/media/LogoExample.219753ea9062620c97c4.png",
     "static/media/logo.png": "/static/media/logo.83687d93f7e3ee0d4851.png",
     "static/media/HEALTH.png": "/static/media/HEALTH.6aa5555996fa5fdd7def.png",
+    "static/media/HotelLogo.png": "/static/media/HotelLogo.e13a2799f8c1c24289d3.png",
     "static/media/ReviewBubbles.png": "/static/media/ReviewBubbles.7c44ed460c6fba24fd0b.png",
     "static/media/Soap.png": "/static/media/Soap.9bf882301cb70509843c.png",
     "static/media/blueladybug463.png": "/static/media/blueladybug463.c24b34411e2ca7eb1ebc.png",
@@ -52,12 +57,12 @@
     "static/media/lapki.png": "/static/media/lapki.2b480359c724c02dd755.png",
     "static/media/bone.png": "/static/media/bone.d30346f4bb87e6311ff9.png",
     "index.html": "/index.html",
-    "main.17b1f645.css.map": "/static/css/main.17b1f645.css.map",
-    "main.35999e28.js.map": "/static/js/main.35999e28.js.map",
+    "main.5e108d41.css.map": "/static/css/main.5e108d41.css.map",
+    "main.67807a2c.js.map": "/static/js/main.67807a2c.js.map",
     "453.4ce15a93.chunk.js.map": "/static/js/453.4ce15a93.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.17b1f645.css",
-    "static/js/main.35999e28.js"
+    "static/css/main.5e108d41.css",
+    "static/js/main.67807a2c.js"
   ]
 }

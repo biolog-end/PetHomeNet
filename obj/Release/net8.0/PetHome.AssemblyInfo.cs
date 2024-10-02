@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PetHome")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+581b96807f9a505f04ad6c020075c6a5de9310a8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73ba74675885dbac6e3b24f0f9206f681af1087e")]
 [assembly: System.Reflection.AssemblyProductAttribute("PetHome")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PetHome")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

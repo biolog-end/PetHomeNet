@@ -146,3 +146,4 @@ C:\Users\Пользователь\source\repos\PetHome\PetHome\obj\Release\net8.
 C:\Users\Пользователь\source\repos\PetHome\PetHome\obj\Release\net8.0\PetHome.pdb
 C:\Users\Пользователь\source\repos\PetHome\PetHome\obj\Release\net8.0\PetHome.genruntimeconfig.cache
 C:\Users\Пользователь\source\repos\PetHome\PetHome\obj\Release\net8.0\ref\PetHome.dll
+C:\Users\Пользователь\source\repos\PetHome\PetHome\obj\Release\net8.0\PetHome.sourcelink.json
