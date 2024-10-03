@@ -218,14 +218,13 @@ namespace PetHome.Controllers
             return CreatedAtAction(nameof(GetHotel), new { id = hotel.Id }, createdHotelDTO);
         }
         [HttpGet("catalog")]
-        public async Task<ActionResult<PaginatedList<CatalogHotelDTO>>> GetHotelCatalog([FromQuery] HotelQueryParameters queryParameters)
+        public async Task<ActionResult<PagedResponse<CatalogHotelDTO>>> GetHotelCatalog([FromQuery] HotelQueryParameters queryParameters)
         {
             IQueryable<Hotel> hotelsQuery = _context.Hotels
                 .Include(h => h.Tags)
                 .Include(h => h.CustomTags)
                 .AsQueryable();
 
-            
             if (queryParameters.Tags != null && queryParameters.Tags.Any())
             {
                 List<TagType> tagTypes = new List<TagType>();
@@ -249,13 +248,11 @@ namespace PetHome.Controllers
                 }
             }
 
-            
             if (queryParameters.MinRating.HasValue)
             {
                 hotelsQuery = hotelsQuery.Where(h => h.AverageRating >= queryParameters.MinRating.Value);
             }
 
-            
             if (queryParameters.PetsAllowed.HasValue)
             {
                 if (queryParameters.PetsAllowed.Value == 0)
@@ -271,12 +268,7 @@ namespace PetHome.Controllers
                     hotelsQuery = hotelsQuery.Where(h => h.PetsAllowed == 2);
                 }
             }
-            else
-            {
-                hotelsQuery = hotelsQuery.Where(h => h.PetsAllowed == 2);
-            }
 
-            
             if (queryParameters.PriceMin.HasValue)
             {
                 hotelsQuery = hotelsQuery.Where(h => h.PricePerNight >= queryParameters.PriceMin.Value);
@@ -286,13 +278,11 @@ namespace PetHome.Controllers
                 hotelsQuery = hotelsQuery.Where(h => h.PricePerNight <= queryParameters.PriceMax.Value);
             }
 
-            
             if (!string.IsNullOrWhiteSpace(queryParameters.SearchTerm))
             {
                 hotelsQuery = hotelsQuery.Where(h => h.Name.Contains(queryParameters.SearchTerm));
             }
 
-            
             if (!string.IsNullOrWhiteSpace(queryParameters.SortBy))
             {
                 switch (queryParameters.SortBy.ToLower())
@@ -328,8 +318,12 @@ namespace PetHome.Controllers
                 hotelsQuery = hotelsQuery.OrderByDescending(h => h.ReviewCount).ThenByDescending(h => h.AverageRating);
             }
 
-            var paginatedList = await PaginatedList<CatalogHotelDTO>.CreateAsync(
-                hotelsQuery.Select(h => new CatalogHotelDTO
+            var totalCount = await hotelsQuery.CountAsync();
+
+            var hotels = await hotelsQuery
+                .Skip((queryParameters.PageNumber - 1) * queryParameters.PageSize)
+                .Take(queryParameters.PageSize)
+                .Select(h => new CatalogHotelDTO
                 {
                     Id = h.Id,
                     Name = h.Name,
@@ -350,18 +344,18 @@ namespace PetHome.Controllers
                     CustomTags = h.CustomTags.Select(ct => ct.Tag).ToList(),
                     ExtraOption = h.ExtraOption,
                     PhotoUrl = h.PhotoUrls.FirstOrDefault()
-                }),
-                queryParameters.PageNumber,
-                queryParameters.PageSize
-            );
+                })
+                .ToListAsync();
 
-            return Ok(paginatedList);
+            var response = new PagedResponse<CatalogHotelDTO>(hotels, totalCount, queryParameters.PageNumber, queryParameters.PageSize);
+
+            return Ok(response);
         }
     }
 
 
-        public class PaginatedList<T> : List<T>
-        {
+    public class PaginatedList<T> : List<T>
+    {
         public int PageIndex { get; private set; }
         public int TotalPages { get; private set; }
 
@@ -381,6 +375,23 @@ namespace PetHome.Controllers
             var count = await source.CountAsync();
             var items = await source.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToListAsync();
             return new PaginatedList<T>(items, count, pageIndex, pageSize);
+        }
+    }
+    public class PagedResponse<T>
+    {
+        public List<T> Items { get; set; }
+        public int PageIndex { get; set; }
+        public int TotalPages { get; set; }
+        public int PageSize { get; set; }
+        public int TotalCount { get; set; }
+
+        public PagedResponse(List<T> items, int count, int pageIndex, int pageSize)
+        {
+            Items = items;
+            TotalCount = count;
+            PageIndex = pageIndex;
+            PageSize = pageSize;
+            TotalPages = (int)Math.Ceiling(count / (double)pageSize);
         }
     }
 }
