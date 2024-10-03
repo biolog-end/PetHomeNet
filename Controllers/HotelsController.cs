@@ -217,89 +217,6 @@ namespace PetHome.Controllers
 
             return CreatedAtAction(nameof(GetHotel), new { id = hotel.Id }, createdHotelDTO);
         }
-
-        [HttpGet("page/{id}")]
-        public async Task<ActionResult<HotelPageDTO>> GetHotelPage(int id)
-        {
-            var hotel = await _context.Hotels
-                .Include(h => h.Tags)
-                .Include(h => h.CustomTags)
-                .Include(h => h.Reviews)
-                .FirstOrDefaultAsync(h => h.Id == id);
-
-            if (hotel == null)
-            {
-                return NotFound();
-            }
-
-            var hotelPageDTO = new HotelPageDTO
-            {
-                Id = hotel.Id,
-                Name = hotel.Name,
-                Location = hotel.Location,
-                Description = hotel.Description,
-                PricePerNight = hotel.PricePerNight,
-                LargeLogoUrl = hotel.LargeLogoUrl,
-                PhotoUrls = hotel.PhotoUrls,
-                AverageRating = hotel.AverageRating,
-                Percentage1Star = hotel.Percentage1Star,
-                Percentage2Star = hotel.Percentage2Star,
-                Percentage3Star = hotel.Percentage3Star,
-                Percentage4Star = hotel.Percentage4Star,
-                Percentage5Star = hotel.Percentage5Star,
-                GroomerPrice = hotel.GroomerPrice,
-                VetPrice = hotel.VetPrice,
-                CCTVPrice = hotel.CCTVPrice,
-                Reviews = hotel.Reviews.Select(r => new ReviewDTO
-                {
-                    UserId = r.UserId,
-                    Username = r.Username,
-                    AvatarUrl = r.AvatarUrl,
-                    Rating = r.Rating,
-                    Text = r.Text,
-                    DateAdded = r.DateAdded
-                }).ToList()
-            };
-
-            return Ok(hotelPageDTO);
-        }
-
-        [HttpGet("catalog/{id}")]
-        public async Task<ActionResult<CatalogHotelDTO>> GetHotelForCatalog(int id)
-        {
-            var hotel = await _context.Hotels
-                .Include(h => h.Tags)
-                .Include(h => h.CustomTags)
-                .FirstOrDefaultAsync(h => h.Id == id);
-
-            if (hotel == null)
-            {
-                return NotFound();
-            }
-
-            var catalogHotelDTO = new CatalogHotelDTO
-            {
-                Id = hotel.Id,
-                Name = hotel.Name,
-                Location = hotel.Location,
-                DateAdded = hotel.DateAdded,
-                PetsAllowed = hotel.PetsAllowed,
-                PricePerNight = hotel.PricePerNight,
-                AvailablePlaces = hotel.AvailablePlaces - hotel.OccupiedPlaces,
-                FreeCancellation = hotel.FreeCancellation,
-                NoPrepayment = hotel.NoPrepayment,
-                AverageRating = hotel.AverageRating,
-                ReviewCount = hotel.ReviewCount,
-                SmallLogoUrl = hotel.SmallLogoUrl,
-                DiscountPercentage = hotel.DiscountPercentage,
-                Tags = hotel.Tags.Select(t => t.TagType).ToList(),
-                CustomTags = hotel.CustomTags.Select(ct => ct.Tag).ToList(),
-                ExtraOption = hotel.ExtraOption,
-                PhotoUrl = hotel.PhotoUrls.FirstOrDefault()
-            };
-
-            return Ok(catalogHotelDTO);
-        }
         [HttpGet("catalog")]
         public async Task<ActionResult<PaginatedList<CatalogHotelDTO>>> GetHotelCatalog([FromQuery] HotelQueryParameters queryParameters)
         {
@@ -309,9 +226,9 @@ namespace PetHome.Controllers
                 .AsQueryable();
 
             
-            List<TagType> tagTypes = new List<TagType>();
             if (queryParameters.Tags != null && queryParameters.Tags.Any())
             {
+                List<TagType> tagTypes = new List<TagType>();
                 foreach (var tag in queryParameters.Tags)
                 {
                     if (Enum.TryParse<TagType>(tag, true, out var tagType))
@@ -323,26 +240,40 @@ namespace PetHome.Controllers
                         _logger.LogWarning($"Invalid tag type: {tag}");
                     }
                 }
+
+                if (tagTypes.Any())
+                {
+                    hotelsQuery = hotelsQuery.Where(h =>
+                        h.Tags.Any(t => tagTypes.Contains(t.TagType)) ||
+                        h.CustomTags.Any(ct => queryParameters.Tags.Contains(ct.Tag)));
+                }
             }
 
             
-            if (tagTypes.Any())
+            if (queryParameters.MinRating.HasValue)
             {
-                hotelsQuery = hotelsQuery.Where(h =>
-                    h.Tags.Any(t => tagTypes.Contains(t.TagType)) ||
-                    h.CustomTags.Any(ct => queryParameters.Tags.Contains(ct.Tag)));
+                hotelsQuery = hotelsQuery.Where(h => h.AverageRating >= queryParameters.MinRating.Value);
             }
 
             
-            if (queryParameters.Ratings != null && queryParameters.Ratings.Any())
+            if (queryParameters.PetsAllowed.HasValue)
             {
-                hotelsQuery = hotelsQuery.Where(h => queryParameters.Ratings.Contains((int)Math.Round(h.AverageRating)));
+                if (queryParameters.PetsAllowed.Value == 0)
+                {
+                    hotelsQuery = hotelsQuery.Where(h => h.PetsAllowed == 0 || h.PetsAllowed == 2);
+                }
+                else if (queryParameters.PetsAllowed.Value == 1)
+                {
+                    hotelsQuery = hotelsQuery.Where(h => h.PetsAllowed == 1 || h.PetsAllowed == 2);
+                }
+                else if (queryParameters.PetsAllowed.Value == 2)
+                {
+                    hotelsQuery = hotelsQuery.Where(h => h.PetsAllowed == 2);
+                }
             }
-
-            
-            if (queryParameters.PetsAllowed != null && queryParameters.PetsAllowed.Any())
+            else
             {
-                hotelsQuery = hotelsQuery.Where(h => queryParameters.PetsAllowed.Contains(h.PetsAllowed));
+                hotelsQuery = hotelsQuery.Where(h => h.PetsAllowed == 2);
             }
 
             
@@ -361,6 +292,7 @@ namespace PetHome.Controllers
                 hotelsQuery = hotelsQuery.Where(h => h.Name.Contains(queryParameters.SearchTerm));
             }
 
+            
             if (!string.IsNullOrWhiteSpace(queryParameters.SortBy))
             {
                 switch (queryParameters.SortBy.ToLower())
@@ -387,13 +319,13 @@ namespace PetHome.Controllers
                         hotelsQuery = hotelsQuery.OrderByDescending(h => h.DateAdded);
                         break;
                     default:
-                        hotelsQuery = hotelsQuery.OrderBy(h => h.Name);
+                        hotelsQuery = hotelsQuery.OrderByDescending(h => h.ReviewCount).ThenByDescending(h => h.AverageRating);
                         break;
                 }
             }
             else
             {
-                hotelsQuery = hotelsQuery.OrderBy(h => h.Name);
+                hotelsQuery = hotelsQuery.OrderByDescending(h => h.ReviewCount).ThenByDescending(h => h.AverageRating);
             }
 
             var paginatedList = await PaginatedList<CatalogHotelDTO>.CreateAsync(
@@ -412,7 +344,9 @@ namespace PetHome.Controllers
                     ReviewCount = h.ReviewCount,
                     SmallLogoUrl = h.SmallLogoUrl,
                     DiscountPercentage = h.DiscountPercentage,
-                    //Tags = h.Tags.Select(t => t.TagType.ToString()).ToList(),
+                    Tags = h.Tags
+                        .Select(t => t.TagType)
+                        .ToList(),
                     CustomTags = h.CustomTags.Select(ct => ct.Tag).ToList(),
                     ExtraOption = h.ExtraOption,
                     PhotoUrl = h.PhotoUrls.FirstOrDefault()
@@ -426,8 +360,8 @@ namespace PetHome.Controllers
     }
 
 
-    public class PaginatedList<T> : List<T>
-    {
+        public class PaginatedList<T> : List<T>
+        {
         public int PageIndex { get; private set; }
         public int TotalPages { get; private set; }
 

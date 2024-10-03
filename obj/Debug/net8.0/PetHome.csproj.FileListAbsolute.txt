@@ -146,3 +146,4 @@ C:\Users\Пользователь\source\repos\PetHome\PetHome\obj\Debug\net8.0\
 C:\Users\Пользователь\source\repos\PetHome\PetHome\obj\Debug\net8.0\ref\PetHome.dll
 C:\Users\Пользователь\source\repos\PetHome\PetHome\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Пользователь\source\repos\PetHome\PetHome\bin\Debug\net8.0\Twilio.dll
+C:\Users\Пользователь\source\repos\PetHome\PetHome\obj\Debug\net8.0\PetHome.sourcelink.json
