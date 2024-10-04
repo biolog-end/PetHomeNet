@@ -27,7 +27,7 @@ namespace PetHome.Controllers
         private static ConcurrentDictionary<string, (string code, DateTime expiration)> _pendingResets = new();
         private static ConcurrentDictionary<string, List<DateTime>> _registrationAttempts = new();
         private static ConcurrentDictionary<string, List<DateTime>> _resetAttempts = new();
-        private readonly TimeSpan _confirmationCodeLifetime = TimeSpan.FromMinutes(5);
+        private readonly TimeSpan _confirmationCodeLifetime = TimeSpan.FromMinutes(40);
         private readonly TimeSpan _resetCodeLifetime = TimeSpan.FromMinutes(3);
 
         public AuthController(

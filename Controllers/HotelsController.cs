@@ -245,6 +245,35 @@ namespace PetHome.Controllers
 
             return CreatedAtAction(nameof(GetHotel), new { id = hotel.Id }, createdHotelDTO);
         }
+        [HttpGet("stats")]
+        public async Task<ActionResult<HotelStatsDTO>> GetHotelStats()
+        {
+            _logger.LogInformation("GetHotelStats called");
+
+            var hotelsWithRating1OrAbove = await _context.Hotels.CountAsync(h => h.AverageRating >= 1);
+            var hotelsWithRating2OrAbove = await _context.Hotels.CountAsync(h => h.AverageRating >= 2);
+            var hotelsWithRating3OrAbove = await _context.Hotels.CountAsync(h => h.AverageRating >= 3);
+            var hotelsWithRating4OrAbove = await _context.Hotels.CountAsync(h => h.AverageRating >= 4);
+            
+            var tagCounts = await _context.Hotels
+                .SelectMany(h => h.Tags.Select(t => new { t.TagType, h.Id }))
+                .Distinct()
+                .GroupBy(t => t.TagType)
+                .Select(g => new { TagType = g.Key, Count = g.Count() })
+                .ToDictionaryAsync(k => k.TagType.ToString(), v => v.Count);
+
+            var statsDTO = new HotelStatsDTO
+            {
+                HotelsWithRating1OrAbove = hotelsWithRating1OrAbove,
+                HotelsWithRating2OrAbove = hotelsWithRating2OrAbove,
+                HotelsWithRating3OrAbove = hotelsWithRating3OrAbove,
+                HotelsWithRating4OrAbove = hotelsWithRating4OrAbove,
+                TagCounts = tagCounts
+            };
+
+            return Ok(statsDTO);
+        }
+
         [HttpGet("catalog")]
         public async Task<ActionResult<PagedResponse<CatalogHotelDTO>>> GetHotelCatalog([FromQuery] HotelQueryParameters queryParameters)
         {
@@ -271,9 +300,16 @@ namespace PetHome.Controllers
                 if (tagTypes.Any())
                 {
                     hotelsQuery = hotelsQuery.Where(h =>
+                        tagTypes.All(tagType => h.Tags.Any(t => t.TagType == tagType)) &&
+                        queryParameters.Tags.All(customTag => h.CustomTags.Any(ct => ct.Tag == customTag)));
+                } // и
+
+                /*if (tagTypes.Any())
+                {
+                    hotelsQuery = hotelsQuery.Where(h =>
                         h.Tags.Any(t => tagTypes.Contains(t.TagType)) ||
                         h.CustomTags.Any(ct => queryParameters.Tags.Contains(ct.Tag)));
-                }
+                } или */
             }
 
             if (queryParameters.MinRating.HasValue)

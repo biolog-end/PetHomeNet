@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+w14fCYHz/v0ubEFKRdjrWrFr/L6NSiVnmhJoJJEnZ8=",
+  "Hash": "T7uwnacUj/M2gBaQaeXdH1DYFk9c/RfM2ud3UgJ/NNY=",
   "Source": "PetHome",
   "BasePath": "_content/PetHome",
   "Mode": "Default",
@@ -1290,12 +1290,12 @@
       "OriginalItemSpec": "wwwroot\\robots.txt"
     },
     {
-      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\css\\main.e249893d.css",
+      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\css\\main.fb63d0c1.css",
       "SourceId": "PetHome",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\",
       "BasePath": "_content/PetHome",
-      "RelativePath": "static/css/main.e249893d.css",
+      "RelativePath": "static/css/main.fb63d0c1.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1306,15 +1306,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\static\\css\\main.e249893d.css"
+      "OriginalItemSpec": "wwwroot\\static\\css\\main.fb63d0c1.css"
     },
     {
-      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\css\\main.e249893d.css.map",
+      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\css\\main.fb63d0c1.css.map",
       "SourceId": "PetHome",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\",
       "BasePath": "_content/PetHome",
-      "RelativePath": "static/css/main.e249893d.css.map",
+      "RelativePath": "static/css/main.fb63d0c1.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1325,7 +1325,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\static\\css\\main.e249893d.css.map"
+      "OriginalItemSpec": "wwwroot\\static\\css\\main.fb63d0c1.css.map"
     },
     {
       "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\js\\453.871e9bb0.chunk.js",
@@ -1366,12 +1366,12 @@
       "OriginalItemSpec": "wwwroot\\static\\js\\453.871e9bb0.chunk.js.map"
     },
     {
-      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\js\\main.bb3e45ea.js",
+      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\js\\main.a90ebe26.js",
       "SourceId": "PetHome",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\",
       "BasePath": "_content/PetHome",
-      "RelativePath": "static/js/main.bb3e45ea.js",
+      "RelativePath": "static/js/main.a90ebe26.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1382,15 +1382,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\static\\js\\main.bb3e45ea.js"
+      "OriginalItemSpec": "wwwroot\\static\\js\\main.a90ebe26.js"
     },
     {
-      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\js\\main.bb3e45ea.js.LICENSE.txt",
+      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\js\\main.a90ebe26.js.LICENSE.txt",
       "SourceId": "PetHome",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\",
       "BasePath": "_content/PetHome",
-      "RelativePath": "static/js/main.bb3e45ea.js.LICENSE.txt",
+      "RelativePath": "static/js/main.a90ebe26.js.LICENSE.txt",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1401,15 +1401,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\static\\js\\main.bb3e45ea.js.LICENSE.txt"
+      "OriginalItemSpec": "wwwroot\\static\\js\\main.a90ebe26.js.LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\js\\main.bb3e45ea.js.map",
+      "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\js\\main.a90ebe26.js.map",
       "SourceId": "PetHome",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\",
       "BasePath": "_content/PetHome",
-      "RelativePath": "static/js/main.bb3e45ea.js.map",
+      "RelativePath": "static/js/main.a90ebe26.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1420,7 +1420,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\static\\js\\main.bb3e45ea.js.map"
+      "OriginalItemSpec": "wwwroot\\static\\js\\main.a90ebe26.js.map"
     },
     {
       "Identity": "C:\\Users\\Пользователь\\source\\repos\\PetHome\\PetHome\\wwwroot\\static\\media\\Ball.d76d9d7ee1123eccba1c.png",
