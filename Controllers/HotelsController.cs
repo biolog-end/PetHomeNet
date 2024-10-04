@@ -82,6 +82,34 @@ namespace PetHome.Controllers
             return Ok(hotelDTO);
         }
 
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteHotel(int id)
+        {
+            _logger.LogInformation($"Attempting to delete hotel with ID: {id}");
+
+            var hotel = await _context.Hotels
+                .Include(h => h.Tags)
+                .Include(h => h.CustomTags)
+                .Include(h => h.Reviews)
+                .FirstOrDefaultAsync(h => h.Id == id);
+
+            if (hotel == null)
+            {
+                _logger.LogWarning($"Hotel with ID: {id} not found.");
+                return NotFound();
+            }
+
+            _context.Tags.RemoveRange(hotel.Tags);
+            _context.CustomTags.RemoveRange(hotel.CustomTags);
+            _context.Reviews.RemoveRange(hotel.Reviews);
+
+            _context.Hotels.Remove(hotel);
+            await _context.SaveChangesAsync();
+
+            _logger.LogInformation($"Hotel with ID: {id} deleted successfully.");
+            return NoContent();
+        }
+
         // POST: api/Hotels
         [HttpPost]
         public async Task<ActionResult<HotelDTO>> CreateHotel(CreateHotelDTO hotelDTO)
